@@ -82,7 +82,7 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
       <div className="w-full m-section flex items-center sm:justify-evenly">
         <div className="m-idle">
           <img
-            width="150px"
+            width="100px"
             src={`../assets/player_idle/${playerSrc}.png`}
           ></img>
         </div>
