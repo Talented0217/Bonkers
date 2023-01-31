@@ -85,13 +85,13 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
             <div className="m-idle hidden sm:block">
               <img
                 width="100px"
-                src={`../assets/player_idle/${playerSrc}.png`}
+                src={require(`../assets/player_idle/${playerSrc}.png`).default}
               ></img>
             </div>
 
             <div className="text-gray-300 text-xl h-[300px] ">
               <img
-                src="../assets/Little_Bonkers_Logo.png"
+                src={require("../assets/Little_Bonkers_Logo.png").default}
                 className="h-full m-auto"
               ></img>
             </div>
@@ -101,7 +101,7 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
                 style={{
                   transform: "scaleX(-1)",
                 }}
-                src={`../assets/bear_idle/${bearSrc}.png`}
+                src={require(`../assets/bear_idle/${bearSrc}.png`).default}
               ></img>
             </div>
           </div>

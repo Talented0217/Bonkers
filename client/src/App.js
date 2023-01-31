@@ -3,10 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 //
 import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Dashboard from "./pages/Dashboard";
+
 import Sign from "./pages/Sign";
-import Main from "./pages/game/Main";
 //redux
 import { Provider } from "react-redux";
 import store from "./store";
@@ -26,7 +24,7 @@ function App() {
     }
     // try to fetch a user, if no token or invalid token we
     // will get a 401 response from our API
-    // store.dispatch(loadUser());
+    store.dispatch(loadUser());
 
     // log user out from all tabs if they log out in one tab
     window.addEventListener("storage", () => {
@@ -37,14 +35,10 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            {/* <Route index element={<Home />} /> */}
-            <Route path="game" element={<Home />} />
-
-            <Route path="dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Layout />}>                  
             <Route path="signup" element={<Sign />} />
           </Route>
-          <Route path="/battle/:tank" element={<Main />} />
+
         </Routes>
       </BrowserRouter>
     </Provider>

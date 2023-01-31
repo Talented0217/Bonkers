@@ -13,7 +13,7 @@ const Layout = ({ auth, alert, logout }) => {
           <div className="container flex flex-wrap justify-between items-center mx-auto">
             <a href="#" className="flex items-center">
               <img
-                src="../assets/Little_Bonkers_Logo.png"
+                src={require("../assets/Little_Bonkers_Logo.png").default}
                 className="mr-3 h-6 sm:h-9"
                 alt="Flowbite Logo"
               />
@@ -115,7 +115,7 @@ const Layout = ({ auth, alert, logout }) => {
         </nav>
         <div className="relative ">
           <Outlet />
-          <img className="m-background" src="../assets/landing.png"></img>
+          <img className="m-background" src={require("../assets/landing.png").default}></img>
         </div>
       </div>
       <ToastContainer

@@ -1,4 +1,4 @@
-import avatar from "./game/assets/materials/tanks/player.png";
+
 import { connect } from "react-redux";
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
@@ -68,11 +68,11 @@ const Dashboard = ({ auth, addTank, withDraw, alerts }) => {
         <div className="mx-auto rounded-lg px-10 py-5 bg-gray-800 md:w-1/2 w-3/4">
           <div className="flex flex-col text-white w-full mx-auto items-center my-20">
             <div className="my-5">
-              <img
+              {/* <img
                 className="w-20 h-20 rounded-full"
                 src={avatar}
                 alt="Rounded avatar"
-              />
+              /> */}
             </div>
             <div className="grid gap-6 mb-6 md:grid-cols-2 w-full">
               <div>
