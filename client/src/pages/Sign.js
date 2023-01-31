@@ -80,24 +80,36 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
   return (
     <>
       <div className="w-full m-section flex items-center sm:justify-evenly">
-        <div className="m-idle">
-          <img
-            width="100px"
-            src={`../assets/player_idle/${playerSrc}.png`}
-          ></img>
-        </div>
         <div className="container px-2 py-2 rounded-lg bg-gray-800 sm:px-10 sm:w-[600px]">
-          <div className="text-gray-300 text-xl h-[300px] ">
-            <img
-              src="../assets/Little_Bonkers_Logo.png"
-              className="h-full m-auto"
-            ></img>
+          <div className="flex justify-evenly items-center">
+            <div className="m-idle hidden sm:block">
+              <img
+                width="100px"
+                src={`../assets/player_idle/${playerSrc}.png`}
+              ></img>
+            </div>
+
+            <div className="text-gray-300 text-xl h-[300px] ">
+              <img
+                src="../assets/Little_Bonkers_Logo.png"
+                className="h-full m-auto"
+              ></img>
+            </div>
+            <div className="m-idle hidden sm:block">
+              <img
+                width="100px"
+                style={{
+                  transform: "scaleX(-1)",
+                }}
+                src={`../assets/bear_idle/${bearSrc}.png`}
+              ></img>
+            </div>
           </div>
           <div className="mt-5">
             <div className="mb-5">
               <label
                 for="name"
-                class="block mb-2 text-sm font-medium text-gray-300 dark:text-white"
+                class="block mb-2 text-sm font-medium text-color2"
               >
                 USERNAME
               </label>
@@ -145,7 +157,7 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
               </button>
             </div>
             <div className="text-white flex flex-row">
-              <div>Already have an account?</div>
+              <div className="text-color3">Already have an account?</div>
               <div
                 className="mx-2 hover:font-bold hover:cursor-pointer underline"
                 onClick={signIn}
@@ -154,15 +166,6 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="m-idle">
-          <img
-            width="100px"
-            style={{
-              transform: "scaleX(-1)",
-            }}
-            src={`../assets/bear_idle/${bearSrc}.png`}
-          ></img>
         </div>
       </div>
     </>

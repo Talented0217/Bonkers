@@ -9,15 +9,15 @@ const Layout = ({ auth, alert, logout }) => {
   return (
     <>
       <div className="relative h-[100vh]">
-        <nav className="border-gray-200 px-2 sm:px-4  rounded dark:bg-green-900 bg-green-900 text-white ">
+        <nav className="border-gray-200 px-2 sm:px-4  rounded dark:bg-green-900 bg-green-900">
           <div className="container flex flex-wrap justify-between items-center mx-auto">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="#" className="flex items-center">
               <img
                 src="../assets/Little_Bonkers_Logo.png"
                 className="mr-3 h-6 sm:h-9"
                 alt="Flowbite Logo"
               />
-              <span className="self-center text-xl font-semibold whitespace-nowrap text-white dark:text-white">
+              <span className="self-center text-xl font-semibold whitespace-nowrap text-color1">
                 Bonkers
               </span>
             </a>

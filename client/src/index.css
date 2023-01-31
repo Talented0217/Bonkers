@@ -17,12 +17,27 @@ code {
 }
 
 
-.a-tank-board{
-  background-color: black;
+@font-face {
+  font-family: bonkerFont;
+  src: url("./assets/SuperMario256.ttf");
 }
-.a-tank-img{
-  background-color: beige;
+
+*{
+  font-family: bonkerFont;
+  font-weight: 100;
+  
 }
-.a-tank-text{
-  background-color: brown;
+
+.text-color1{
+  color: #c8fbe1;
+}
+
+.text-color2{
+  color: #94cd84;
+  
+}
+
+.text-color3{
+  color:#ff9200;
+
 }

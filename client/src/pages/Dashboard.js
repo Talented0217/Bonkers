@@ -14,7 +14,7 @@ const Dashboard = ({ auth, addTank, withDraw, alerts }) => {
   const [tankCount, setTankCount] = useState(0);
   const [tankBuy, setTankBuy] = useState(1);
   const [wallet, setWalletAddress] = useState(null);
-
+  
   useEffect(() => {
     alerts.forEach((element) => {
       if (element.alertType == "danger")
@@ -128,7 +128,7 @@ const Dashboard = ({ auth, addTank, withDraw, alerts }) => {
                   htmlFor="Earning"
                   className="block mb-2 text-sm font-medium text-gray-100 dark:text-gray-300"
                 >
-                  Earning
+                  Eaning
                 </label>
                 <input
                   type="text"
