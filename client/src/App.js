@@ -12,6 +12,12 @@ import { loadUser } from "./actions/user";
 import setAuthToken from "./utils/setAuthToken";
 import { LOGOUT } from "./actions/types";
 
+// game
+
+
+import Main from './pages/game/Main';
+import Scoreboard from "./pages/Scoreboard";
+
 function App() {
   useEffect(() => {
     console.log(process.env);
@@ -24,7 +30,7 @@ function App() {
     }
     // try to fetch a user, if no token or invalid token we
     // will get a 401 response from our API
-    store.dispatch(loadUser());
+    // store.dispatch(loadUser());
 
     // log user out from all tabs if they log out in one tab
     window.addEventListener("storage", () => {
@@ -37,7 +43,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>                  
             <Route path="signup" element={<Sign />} />
+            <Route path="scoreboard" element={<Scoreboard />} />
           </Route>
+          <Route path="game" element={<Main />} />    
 
         </Routes>
       </BrowserRouter>
