@@ -19,6 +19,8 @@ const Main = () => {
               default: "arcade",
               arcade: {                
                 debug: true,
+                gravityY:0
+                
               },
             },
             background: "black",
