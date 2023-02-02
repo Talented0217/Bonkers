@@ -14,11 +14,9 @@ class Character {
 
 
 
-        console.log(config);
 
-        this.body = this.scene.physics.add.sprite(config.x, config.y, config.type, 0).setScale(0.2, 0.2)
-        this.body.setBodySize(50, 50);
-
+        this.body = this.scene.physics.add.sprite(config.x, config.y, config.type, 0).setScale(0.2, 0.2).setOrigin(0, 0);
+        this.body.setBodySize(700, 100, false);
 
         //event
         this.body.on("animationcomplete", ({ key }) => {

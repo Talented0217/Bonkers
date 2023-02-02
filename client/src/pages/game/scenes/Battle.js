@@ -37,11 +37,15 @@ class Battle extends Scene {
     create() {
         this.backgroundImage = this.add.image(0, 0, "background1").setOrigin(0, 0).setScale(0.5, 0.5);
 
+        this.test = this.physics.add.sprite(200, 800, ZEPHYR, 0).setScale(0.2, 0.2).setOrigin(1, 0)
+
 
 
         // create animation
         this.createPlayerAnimations(FIRE);
         this.createPlayerAnimations(ZEPHYR);
+
+        this.test.play(ZEPHYR + "Slash");
 
 
         this.arrows = this.input.keyboard.createCursorKeys();
@@ -107,7 +111,7 @@ class Battle extends Scene {
 
         if (this.controllers.S.isDown) {
             keyPressed = true;
-            isSlashing = true;
+            // isSlashing = true;
         }
 
         // JUMPING
@@ -158,7 +162,10 @@ class Battle extends Scene {
 
                 // not moving idle
 
+            } else {
+                this.player.updateState(STATE_IDLING);
             }
+
 
         }
 
