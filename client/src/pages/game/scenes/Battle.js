@@ -1,21 +1,28 @@
 import { Scene } from "phaser";
 // components
 import Character from "../components/Character";
-import { BEAR, ZEPHYR, FIRE, LEFT, RIGHT, UP, DOWN, STATE_RUNNING, STATE_SLASHING_IDLE, STATE_SLASHING_RUNNING, STATE_KICKING } from "../playerConfig";
-import { STATE_ATTACKING, STATE_IDLING, STATE_WALKING, STATE_DYING, STATE_WAITING } from '../playerConfig';
+import { BEAR, ZEPHYR, FIRE, LIGHTNING, SHIBA, LEFT, RIGHT, UP, DOWN, DELTA_X, DELTA_Y } from "../playerConfig";
+import { STATE_RUNNING, STATE_SLASHING_IDLE, STATE_SLASHING_RUNNING, STATE_KICKING, STATE_SLIDING, STATE_ATTACKING, STATE_HURTING, STATE_IDLING, STATE_WALKING, STATE_DYING, STATE_WAITING } from '../playerConfig';
+
+import { sleep } from "../playerConfig";
+
+
+
 //images
 import back1 from '../assets/background/game_background_1.png';
-
 import bear from '../assets/sprites/bear.png'
 import zephyr from "../assets/sprites/zephyr.png";
 import fire from "../assets/sprites/fire.png";
-
+import shiba from "../assets/sprites/shiba.png";
+import lightning from "../assets/sprites/lightning.png";
+import hp from "../assets/sprites/hp.png";
 //json
 const bearJson = require('../assets/jsons/bear.json');
-
 const zephyrJson = require('../assets/jsons/zephyr.json');
 const fireJson = require('../assets/jsons/fire.json');
-
+const lightningJson = require('../assets/jsons/lightning.json');
+const shibaJson = require('../assets/jsons/shiba.json');
+const hpJson = require('../assets/jsons/hp.json');
 //
 
 class Battle extends Scene {
@@ -26,26 +33,44 @@ class Battle extends Scene {
         this.backgroundImage = null;
 
 
+        this.type = props.player;
+
+
+        //flags
+        this.isSliding = false;
+        this.enemies = [];
     }
 
     preload() {
         this.load.image("background1", back1);
-        // this.load.atlas("bear", bear, bearJson);
-        this.load.atlas(ZEPHYR, zephyr, zephyrJson);
-        this.load.atlas("Fire", fire, fireJson);
+        this.load.atlas("bear", bear, bearJson);
+
+        if (this.type == FIRE) {
+            this.load.atlas(this.type, fire, fireJson);
+        }
+        if (this.type == SHIBA) {
+            this.load.atlas(this.type, shiba, shibaJson);
+        }
+        if (this.type == LIGHTNING) {
+            this.load.atlas(this.type, lightning, lightningJson);
+        }
+        if (this.type == ZEPHYR) {
+            this.load.atlas(this.type, zephyr, zephyrJson);
+        }
+
+
+        this.load.atlas("hp", hp, hpJson);
+        // this.load.atlas(ZEPHYR, zephyr, zephyrJson);
+        // this.load.atlas("Fire", fire, fireJson);
+
     }
-    create() {
+    async create() {
         this.backgroundImage = this.add.image(0, 0, "background1").setOrigin(0, 0).setScale(0.5, 0.5);
 
-        this.test = this.physics.add.sprite(200, 800, ZEPHYR, 0).setScale(0.2, 0.2).setOrigin(1, 0)
-
-
-
         // create animation
-        this.createPlayerAnimations(FIRE);
-        this.createPlayerAnimations(ZEPHYR);
+        this.createPlayerAnimations(this.type);
+        this.createBearAnimations();
 
-        this.test.play(ZEPHYR + "Slash");
 
 
         this.arrows = this.input.keyboard.createCursorKeys();
@@ -53,30 +78,54 @@ class Battle extends Scene {
 
 
         this.player = new Character(this, {
-            type: FIRE,
+            type: this.type,
             direction: RIGHT,
             x: 300,
             y: 300,
             speed: 40,
             state: STATE_WAITING,
+            scale: 0.2,
+            body_width: 700,
+            body_height: 100,
+            offsetY: 500,
+            shadow_width: 500,
+            shadow_height: 100,
+            shadow_x: 20,
+            shadow_y: 100,
+
+
         });
 
-        this.player2 = new Character(this, {
-            type: ZEPHYR,
-            direction: RIGHT,
-            x: 600,
-            y: 300,
-            speed: 40,
-            state: STATE_WAITING,
-        });
+        for (let i = 0; i < 5; i++) {
+            // setTimeout(() => { }, 1000)
+            await sleep(1000);
+            let bear_temp = new Character(this, {
+                type: BEAR,
+                direction: RIGHT,
+                x: 1000 + i * Math.random() * 200,
+                y: 300 + i * 200,
+                speed: 60,
+                state: STATE_IDLING,
+                scale: 0.4,
+                body_width: 350,
+                body_height: 100,
+                shadow_width: 350,
+                shadow_height: 100,
+                offsetY: 350,
+                shadow_x: 0,
+                shadow_y: 140,
+                range: 100
+
+            });
+            this.enemies.push(bear_temp);
+        }
+
 
     }
     update() {
 
         let h = null, v = null;
         let isRunning = false, isSlashing = false;
-        let jumpStarted = false, isJumping = false;
-        let isSliding = false;
         let keyPressed = false;
 
 
@@ -122,7 +171,19 @@ class Battle extends Scene {
         //Kick
         if (this.controllers.F.isDown) {
             this.player.updateState(STATE_KICKING);
+
         }
+        else if (this.controllers.S.isDown && this.isSliding == false) {
+            this.player.updateState(STATE_SLIDING);
+            this.isSliding = true;
+            setTimeout(() => {
+
+                this.isSliding = false;
+
+            }, 500)
+            return;
+        }
+
         if (keyPressed == false)
             this.player.updateState(STATE_IDLING);
         else {
@@ -159,7 +220,6 @@ class Battle extends Scene {
             }
             else if (isSlashing) {
                 this.player.updateState(STATE_SLASHING_IDLE);
-
                 // not moving idle
 
             } else {
@@ -169,11 +229,8 @@ class Battle extends Scene {
 
         }
 
-        this.player2.updateState(STATE_IDLING);
-
-
-
-
+        this.controlBears();
+        this.updateZindex();
 
     }
 
@@ -182,7 +239,7 @@ class Battle extends Scene {
         // bear animation
         this.anims.create({
             key: 'bearIdle',
-            frames: this.anims.generateFrameNames('bear', { prefix: 'zombie bear_idle', start: 0, end: 40, zeroPad: 3 }),
+            frames: this.anims.generateFrameNames('bear', { prefix: 'zombie bear_idle', start: 0, end: 24, zeroPad: 3 }),
             frameRate: 24,
             repeat: -1
         })
@@ -194,7 +251,7 @@ class Battle extends Scene {
         })
         this.anims.create({
             key: 'bearAttack',
-            frames: this.anims.generateFrameNames('bear', { prefix: 'Zombie Bear Attack_', start: 0, end: 40, zeroPad: 3 }),
+            frames: this.anims.generateFrameNames('bear', { prefix: 'Zombie Bear Attack_', start: 0, end: 24, zeroPad: 3 }),
             frameRate: 24,
         })
         this.anims.create({
@@ -281,7 +338,7 @@ class Battle extends Scene {
             key: type + 'Slide',
             frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Sliding_', start: 0, end: 5, zeroPad: 3 }),
             frameRate: 24,
-            repeat: -1
+
         })
         this.anims.create({
             key: type + 'Walk',
@@ -293,6 +350,92 @@ class Battle extends Scene {
     // createAnimations = (type) => {
     //     this.createPlayerAnimations(type);
     // }
+
+    generateRandomState = () => {
+
+        let states = [STATE_IDLING, STATE_WALKING];
+        // return states[~~Math.random() * (states.length + 1)];
+        if (Math.random() < 0.1) return STATE_IDLING;
+        else return STATE_WALKING;
+    }
+
+    controlBears = () => {
+        //this.enemies
+        for (let i = 0; i < this.enemies.length; i++) {
+
+
+
+
+            let dx = this.getDeltaX(this.player, this.enemies[i]);
+            let dy = this.getDeltaY(this.player, this.enemies[i]);
+
+            let h = null;
+            let v = null;
+            if (dx > this.enemies[i].config.range)
+                h = RIGHT;
+            if (dx < - this.enemies[i].config.range) h = LEFT;
+            else {
+
+
+                if (dx > 0 && this.enemies[i].direction() == LEFT) {
+                    h = RIGHT;
+                }
+                else if (dx < 0 && this.enemies[i].direction() == RIGHT) {
+                    h = LEFT;
+                }
+            }
+
+            if (dy > DELTA_Y)
+                v = DOWN;
+            if (dy < -DELTA_Y) v = UP;
+
+
+
+            if (!(h == null && v == null))
+                this.enemies[i].updateState(STATE_WALKING, {
+                    directionH: h,
+                    directionV: v
+                });
+            else {
+                console.log("attacking");
+                this.enemies[i].updateState(STATE_ATTACKING);
+            }
+
+
+
+        }
+
+    }
+
+    getDeltaX = (playerA, playerB) => {
+        return playerA.x() - playerB.x();
+    }
+    getDeltaY = (playerA, playerB) => {
+        return playerA.y() - playerB.y();
+    }
+
+    updateZindex = () => {
+
+        let r = 1;
+        for (let i = 0; i < this.enemies.length; i++) {
+            r = this.getZindex(this.enemies[i]);
+            this.enemies[i].setZindex(3 * r + 1);
+        }
+        r = this.getZindex(this.player);
+        this.player.setZindex(3 * r - 1 + 1);
+
+    }
+
+    getZindex = (obj) => {
+        let rank = 1;
+        for (let i = 0; i < this.enemies.length; i++) {
+            if (obj.y() > this.enemies[i].y() && i != rank)
+                rank++;
+        }
+        return rank;
+
+    }
+
 
 }
 export default Battle;

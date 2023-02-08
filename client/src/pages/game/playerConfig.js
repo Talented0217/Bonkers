@@ -1,7 +1,10 @@
 export const BEAR = "bear";
 export const PLAYER = "player";
+
 export const ZEPHYR = "Zephyr";
 export const FIRE = "Fire";
+export const LIGHTNING = "Lightning"
+export const SHIBA = "Shiba"
 
 export const STATE_WAITING = "waiting for states";
 export const STATE_WALKING = "walking";
@@ -16,6 +19,7 @@ export const STATE_SLASHING_RUNNING = "slashing running";
 export const STATE_SLASHING_AIR = "slashing air";
 export const STATE_SLIDING = "sliding";
 export const STATE_DEAD = "dead";
+export const STATE_HURTING = "hurting"
 
 //enemies
 export const STATE_ATTACKING = "attacking";
@@ -27,6 +31,9 @@ export const UP = "up";
 export const DOWN = "down";
 
 
+
+export const DELTA_X = 10; // range
+export const DELTA_Y = 2;
 
 // export const PLAYER_ANIMATION ={
 //     "Die":"_Shiba_Dying_",
@@ -44,3 +51,7 @@ export const DOWN = "down";
 //     "Die":"_Shiba_Dying_",
 
 // }
+
+export function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
