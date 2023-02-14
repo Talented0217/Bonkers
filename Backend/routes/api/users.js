@@ -10,7 +10,7 @@ const User = require("../../model/User");
 // @route    POST api/users
 // @desc     Register user
 // @access   Public
-const { withDraw } = require("../../api/api");
+const { withDraw, addScore } = require("../../api/api");
 
 router.post("/withdraw", auth, async (req, res) => {
   try {
@@ -28,6 +28,35 @@ router.post("/withdraw", auth, async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
+
+router.post("/addScore", auth, async (req, res) => {
+  try {
+    console.log("addscore", req.user.id, req.body.score);
+    await addScore(req.user.id, req.body.score);
+    res.status(200).send("success");
+  }
+  catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
+
+
+router.get("/all", async (req, res) => {
+  try {
+    const users = await User.aggregate(
+      [
+        { $sort: { Score: 1 } }
+      ]
+    )
+    res.json(users)
+  }
+  catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+
+})
 
 router.get("/", auth, async (req, res) => {
   try {

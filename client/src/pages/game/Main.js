@@ -5,6 +5,8 @@ import { useEffect } from "react";
 
 import Loading from './scenes/Loading';
 import Battle from "./scenes/Battle";
+
+import { Link } from "react-router-dom";
 const boardConfig = require("./config.json");
 
 const Main = (props) => {
@@ -13,7 +15,8 @@ const Main = (props) => {
 
   useEffect(() => {
     const loading = new Loading({ key: 'loading' });
-    const battle = new Battle({ key: 'battle', player: location.state.player });
+    let player = location.state.player ? location.state.player : "Zephyr";
+    const battle = new Battle({ key: 'battle', player: player });
     const config = {
       type: Phaser.AUTO,
       parent: "game",
@@ -40,13 +43,14 @@ const Main = (props) => {
     const game = new Phaser.Game(config);
     game.scene.start('loading');
 
-    return (() => {
-      game = null;
-    })
+    // return (() => {
+    //   game = null;
+    // })
   }, [])
 
-
-  return <></>;
+  return <><div id="game"></div>
+    <Link to="/withdraw" id="navTowith" />
+  </>;
 };
 
 export default Main;

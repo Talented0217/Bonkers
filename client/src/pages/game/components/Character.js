@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import { ZEPHYR, FIRE, STATE_SLIDING, BEAR } from "../playerConfig";
+import { BOSS, ZEPHYR, FIRE, STATE_SLIDING, BEAR } from "../playerConfig";
 import { } from "../playerConfig";
 import { STATE_ATTACKING, STATE_IDLING, STATE_WALKING, STATE_DYING, STATE_WAITING, STATE_HURTING, STATE_KICKING, STATE_RUNNING, STATE_SLASHING_IDLE, STATE_SLASHING_RUNNING } from '../playerConfig';
 import { LEFT, RIGHT, UP, DOWN } from '../playerConfig';
@@ -13,24 +13,42 @@ class Character {
 
         this.config = { ...config };
 
+        this.dead = false;
+
 
         this.shadow = this.scene.add.ellipse(config.x + config.shadow_x, config.y + config.shadow_y, config.shadow_width, config.shadow_height, "#000000", 0.7).setOrigin(0, 0).setScale(config.scale, config.scale);
         this.body = this.scene.physics.add.sprite(config.x, config.y, config.type, 0).setScale(config.scale, config.scale).setOrigin(0, 0);
+
         this.body.setBodySize(config.body_width, config.body_height, false);
-        this.body.body.setOffset(0, config.offsetY);
+        this.body.body.setOffset(config.offsetX, config.offsetY);
 
+        this.attacking = false;
 
-        this.hp = this.scene.add.sprite(0, 0, "hp").setScale(0.5, 0.5).setOrigin(0, 0);
-
-
-        if (this.config.type == BEAR)
-            this.hp.setAlpha(0);
-
+        // if (this.config.type == "Boss") this.body.setOrigin(1, 0);
         //event
 
         this.body.on("animationcomplete", ({ key }) => {
-            this.setState(STATE_WAITING);
+            console.log('animation', key);
+            if (key == this.config.type + "Hurt") {
+
+                if (this.config.currentHp == 0) {
+                    this.die();
+                }
+                else {
+
+                    this.setState(STATE_WAITING);
+                }
+            }
+            else if (key == this.config.type + "Die") {
+                this.dead = true;
+                this.body.destroy();
+                this.shadow.destroy();
+            }
+            else
+                this.setState(STATE_WAITING);
         })
+
+
 
 
     }
@@ -57,6 +75,8 @@ class Character {
             if (directionV == UP) {
                 this.body.setVelocityY(-s);
             }
+
+
             else if (directionV == DOWN) {
                 this.body.setVelocityY(s);
             }
@@ -65,9 +85,11 @@ class Character {
 
             if (directionH != this.config.direction) {
                 this.body.setFlipX(true);
+
             }
             else {
                 this.body.setFlipX(false);
+
             }
 
             if (directionH == LEFT) this.body.setVelocityX(-s);
@@ -105,6 +127,24 @@ class Character {
 
     die = () => {
         this.body.play(this.config.type + "Die")
+        if (this.config.type == BOSS) {
+            if (this.direction() == this.config.direction) {
+                this.body.setOrigin(0.3, 0.2);
+            }
+            else {
+                this.body.setOrigin(0, 0.2);
+            }
+        }
+        if (this.config.type == BEAR) {
+            if (this.direction() == this.config.direction) {
+                // alert("UAAAAA");
+                this.body.setOrigin(0.5, 0.2);
+            }
+            else {
+                this.body.setOrigin(0, 0.2);
+            }
+        }
+
         this.setState(STATE_DYING);
     }
 
@@ -125,19 +165,60 @@ class Character {
     slashIdle = () => {
         this.body.play(this.config.type + "Slash");
         this.setVelocity(0, 0);
+
+        // this.setAttackFlag(3, 6);
+        this.emitAttack(3);
         this.setState(STATE_SLASHING_IDLE);
     }
 
     slashRun = () => {
         this.body.play(this.config.type + "RunSlash");
+
+        // this.setAttackFlag(3, 6);
+        this.emitAttack(3);
         this.setState(STATE_SLASHING_RUNNING);
     }
 
+    // =======
+    setAttackFlag = (st, en) => {
+        setTimeout(() => {
+            this.attacking = true;
+        }, st * 1000 / 24);
+        setTimeout(() => {
+            this.attacking = false;
+        }, en * 1000 / 24);
+    }
+
+    // ======= 
+    reduceHp = (hp) => {
+        this.config.hp -= hp;
+        if (this.config.hp == 0) {
+            this.emit("dead");
+        }
+
+    }
     //======================================================================
     attack = () => {
+        //13~18
         this.body.play(this.config.type + "Attack");
         this.setVelocity(0, 0);
+        // this.setAttackFlag(14, 18);
+        this.emitAttack(14);
         this.setState(STATE_ATTACKING);
+
+
+    }
+
+    emitAttack = (st) => {
+        setTimeout(() => {
+            this.body.emit("attack", {
+                x: this.x(),
+                y: this.y(),
+                range: this.config.range,
+                direction: this.direction(),
+            });
+        }, st * 1000 / 24)
+
     }
 
 
@@ -146,7 +227,7 @@ class Character {
 
     updateState = (state, data) => {
         // console.log(this.config.type, state);
-
+        if (this.config.state == STATE_DYING) return;
         switch (state) {
 
             case STATE_IDLING:
@@ -180,7 +261,9 @@ class Character {
                 }
                 break;
             case STATE_HURTING:
-                this.hurt();
+                if (this.config.state != this.STATE_DYING && this.dead == false) {
+                    this.hurt();
+                }
                 //hurt
                 break;
             case STATE_SLIDING:
@@ -203,9 +286,11 @@ class Character {
     }
 
     x = () => {
+        if (this.dead == true) return 0;
         return this.body.body.x + this.body.body.width / 2;
     }
     y = () => {
+        if (this.dead == true) return 0;
         return this.body.body.y + this.body.body.height / 2;
     }
     direction = () => {

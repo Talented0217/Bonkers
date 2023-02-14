@@ -3,9 +3,15 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { logout } from "../actions/user";
 import { Navigate } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 const { Outlet, Link } = require("react-router-dom");
 const Layout = ({ auth, alert, logout }) => {
+
+  const aud = useRef();
+  useEffect(() => {
+    aud.current.setAttribute("autoplay", "");
+  }, [])
   return (
     <>
       <div className="relative h-[100vh]">
@@ -60,10 +66,10 @@ const Layout = ({ auth, alert, logout }) => {
                 {auth.isAuthenticated == true ? (
                   <li>
                     <Link
-                      to="/dashboard"
+                      to="/Scoreboard"
                       className="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
-                      Dashboard
+                      Scoreboard
                     </Link>
                   </li>
                 ) : (
@@ -72,10 +78,10 @@ const Layout = ({ auth, alert, logout }) => {
 
                 <li>
                   <Link
-                    to="#"
+                    to="/withdraw"
                     className="block py-2 pr-4 pl-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >
-                    About
+                    Withdraw
                   </Link>
                 </li>
 
@@ -112,6 +118,7 @@ const Layout = ({ auth, alert, logout }) => {
               </ul>
             </div>
           </div>
+          <audio ref={aud} autoplay={true} src={require('./game/assets/audio/IntroMusic.mpeg').default}></audio>
         </nav>
         <div className="relative ">
           <Outlet />
@@ -130,6 +137,7 @@ const Layout = ({ auth, alert, logout }) => {
         pauseOnHover
         theme="colored"
       />
+
     </>
   );
 };

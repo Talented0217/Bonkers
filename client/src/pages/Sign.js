@@ -76,7 +76,7 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
     }
   };
 
-  if (auth.isAuthenticated == true) return <Navigate to="/dashboard" />;
+  if (auth.isAuthenticated == true) return <Navigate to="/selectCharacter" />;
   return (
     <>
       <div className="w-full m-section flex items-center sm:justify-evenly">

@@ -1,5 +1,6 @@
 export const BEAR = "bear";
 export const PLAYER = "player";
+export const BOSS = "boss";
 
 export const ZEPHYR = "Zephyr";
 export const FIRE = "Fire";
@@ -30,7 +31,7 @@ export const RIGHT = "right";
 export const UP = "up";
 export const DOWN = "down";
 
-
+export const MAX_ENEMY = 7;
 
 export const DELTA_X = 10; // range
 export const DELTA_Y = 2;

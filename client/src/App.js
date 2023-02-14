@@ -18,6 +18,7 @@ import { LOGOUT } from "./actions/types";
 import Main from './pages/game/Main';
 import Scoreboard from "./pages/Scoreboard";
 import CharacterSelection from "./pages/CharacterSelection";
+import Withdraw from "./pages/Withdraw";
 function App() {
   useEffect(() => {
     console.log(process.env);
@@ -41,12 +42,13 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route path="signup" element={<Sign />} />
-            <Route path="scoreboard" element={<Scoreboard />} />
-            <Route path="selectcharacter" element={<CharacterSelection />} />
+          <Route exact path="/" element={<Layout />}>
+            <Route exact path="signup" element={<Sign />} />
+            <Route exact path="scoreboard" element={<Scoreboard />} />
+            <Route exact path="selectcharacter" element={<CharacterSelection />} />
+            <Route exact path="withdraw" element={<Withdraw />} />
           </Route>
-          <Route path="game" element={<Main />} />
+          <Route exact path="game" element={<Main />} />
 
         </Routes>
       </BrowserRouter>

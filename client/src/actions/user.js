@@ -102,6 +102,19 @@ export const removeTank = () => async (dispatch) => {
     });
   }
 };
+export const addScore = (score) => async (dispatch) => {
+  try {
+    console.log("score:", score);
+    const res = await api.post("/users/addScore", { score: score });
+    dispatch(loadUser());
+    dispatch(setAlert("Addscore Success!", "success"));
+  } catch (err) {
+    const errors = err.response.data.errors;
+    if (errors) {
+      errors.forEach((error) => dispatch(setAlert(error.msg, "danger")));
+    }
+  }
+}
 export const withDraw = () => async (dispatch) => {
   try {
     const res = await api.post("/users/withdraw");
