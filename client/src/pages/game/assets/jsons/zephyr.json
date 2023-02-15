@@ -1,3226 +1,2722 @@
 {
     "frames": [
         {
-            "filename": "Zephyr_Shiba_Dying_000",
-            "frame": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_001",
-            "frame": {
-                "x": 0,
-                "y": 766,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_002",
-            "frame": {
-                "x": 860,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_003",
-            "frame": {
-                "x": 860,
-                "y": 766,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_004",
-            "frame": {
-                "x": 0,
-                "y": 1532,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_005",
-            "frame": {
-                "x": 860,
-                "y": 1532,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_006",
-            "frame": {
-                "x": 1720,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_007",
-            "frame": {
-                "x": 1720,
-                "y": 766,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_008",
-            "frame": {
-                "x": 1720,
-                "y": 1532,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_009",
-            "frame": {
-                "x": 0,
-                "y": 2298,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_010",
-            "frame": {
-                "x": 860,
-                "y": 2298,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_011",
-            "frame": {
-                "x": 1720,
-                "y": 2298,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_012",
-            "frame": {
-                "x": 2580,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_013",
-            "frame": {
-                "x": 2580,
-                "y": 766,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Dying_014",
-            "frame": {
-                "x": 2580,
-                "y": 1532,
-                "w": 859,
-                "h": 765
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 859,
-                "h": 765
-            },
-            "sourceSize": {
-                "w": 859,
-                "h": 765
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Falling Down_000",
-            "frame": {
-                "x": 2580,
-                "y": 2298,
-                "w": 520,
-                "h": 760
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 520,
-                "h": 760
-            },
-            "sourceSize": {
-                "w": 520,
-                "h": 760
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Falling Down_001",
-            "frame": {
-                "x": 0,
-                "y": 3064,
-                "w": 520,
-                "h": 760
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 520,
-                "h": 760
-            },
-            "sourceSize": {
-                "w": 520,
-                "h": 760
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Falling Down_002",
-            "frame": {
-                "x": 521,
-                "y": 3064,
-                "w": 520,
-                "h": 760
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 520,
-                "h": 760
-            },
-            "sourceSize": {
-                "w": 520,
-                "h": 760
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Falling Down_003",
-            "frame": {
-                "x": 1042,
-                "y": 3064,
-                "w": 520,
-                "h": 760
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 520,
-                "h": 760
-            },
-            "sourceSize": {
-                "w": 520,
-                "h": 760
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Falling Down_004",
-            "frame": {
-                "x": 1563,
-                "y": 3064,
-                "w": 520,
-                "h": 760
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 520,
-                "h": 760
-            },
-            "sourceSize": {
-                "w": 520,
-                "h": 760
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Falling Down_005",
-            "frame": {
-                "x": 2084,
-                "y": 3064,
-                "w": 520,
-                "h": 760
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 520,
-                "h": 760
-            },
-            "sourceSize": {
-                "w": 520,
-                "h": 760
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_000",
-            "frame": {
-                "x": 0,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_001",
-            "frame": {
-                "x": 766,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_002",
-            "frame": {
-                "x": 1532,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_003",
-            "frame": {
-                "x": 2298,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_004",
-            "frame": {
-                "x": 3064,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_005",
-            "frame": {
-                "x": 3830,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_006",
-            "frame": {
-                "x": 4596,
-                "y": 5895,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_007",
-            "frame": {
-                "x": 5905,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_008",
-            "frame": {
-                "x": 5905,
-                "y": 626,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_009",
-            "frame": {
-                "x": 5905,
-                "y": 1252,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_010",
-            "frame": {
-                "x": 5905,
-                "y": 1878,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Hurt_011",
-            "frame": {
-                "x": 5905,
-                "y": 2504,
-                "w": 765,
-                "h": 625
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 765,
-                "h": 625
-            },
-            "sourceSize": {
-                "w": 765,
-                "h": 625
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_000",
-            "frame": {
-                "x": 1230,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_001",
-            "frame": {
-                "x": 1848,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_002",
-            "frame": {
-                "x": 2466,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_003",
-            "frame": {
-                "x": 3084,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_004",
-            "frame": {
-                "x": 3702,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_005",
-            "frame": {
-                "x": 4320,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_006",
-            "frame": {
-                "x": 4938,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_007",
-            "frame": {
-                "x": 5556,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_008",
-            "frame": {
-                "x": 6174,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_009",
-            "frame": {
-                "x": 6792,
-                "y": 7728,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_010",
-            "frame": {
-                "x": 7992,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_011",
-            "frame": {
-                "x": 7992,
-                "y": 567,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_012",
-            "frame": {
-                "x": 7992,
-                "y": 1134,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_013",
-            "frame": {
-                "x": 7992,
-                "y": 1701,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_014",
-            "frame": {
-                "x": 7992,
-                "y": 2268,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_015",
-            "frame": {
-                "x": 7992,
-                "y": 2835,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_016",
-            "frame": {
-                "x": 7992,
-                "y": 3402,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Idle Blinking_017",
-            "frame": {
-                "x": 7992,
-                "y": 3969,
-                "w": 617,
-                "h": 566
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 617,
-                "h": 566
-            },
-            "sourceSize": {
-                "w": 617,
-                "h": 566
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Loop_000",
-            "frame": {
-                "x": 2605,
-                "y": 3064,
-                "w": 594,
-                "h": 716
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "sourceSize": {
-                "w": 594,
-                "h": 716
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Loop_001",
-            "frame": {
-                "x": 3440,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "sourceSize": {
-                "w": 594,
-                "h": 716
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Loop_002",
-            "frame": {
-                "x": 3440,
-                "y": 717,
-                "w": 594,
-                "h": 716
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "sourceSize": {
-                "w": 594,
-                "h": 716
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Loop_003",
-            "frame": {
-                "x": 3440,
-                "y": 1434,
-                "w": 594,
-                "h": 716
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "sourceSize": {
-                "w": 594,
-                "h": 716
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Loop_004",
-            "frame": {
-                "x": 3440,
-                "y": 2151,
-                "w": 594,
-                "h": 716
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "sourceSize": {
-                "w": 594,
-                "h": 716
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Loop_005",
-            "frame": {
-                "x": 3440,
-                "y": 2868,
-                "w": 594,
-                "h": 716
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 594,
-                "h": 716
-            },
-            "sourceSize": {
-                "w": 594,
-                "h": 716
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Start_000",
-            "frame": {
-                "x": 0,
-                "y": 3825,
-                "w": 670,
-                "h": 714
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 670,
-                "h": 714
-            },
-            "sourceSize": {
-                "w": 670,
-                "h": 714
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Start_001",
-            "frame": {
-                "x": 671,
-                "y": 3825,
-                "w": 670,
-                "h": 714
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 670,
-                "h": 714
-            },
-            "sourceSize": {
-                "w": 670,
-                "h": 714
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Start_002",
-            "frame": {
-                "x": 1342,
-                "y": 3825,
-                "w": 670,
-                "h": 714
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 670,
-                "h": 714
-            },
-            "sourceSize": {
-                "w": 670,
-                "h": 714
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Start_003",
-            "frame": {
-                "x": 2013,
-                "y": 3825,
-                "w": 670,
-                "h": 714
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 670,
-                "h": 714
-            },
-            "sourceSize": {
-                "w": 670,
-                "h": 714
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Start_004",
-            "frame": {
-                "x": 2684,
-                "y": 3825,
-                "w": 670,
-                "h": 714
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 670,
-                "h": 714
-            },
-            "sourceSize": {
-                "w": 670,
-                "h": 714
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Jump Start_005",
-            "frame": {
-                "x": 3355,
-                "y": 3825,
-                "w": 670,
-                "h": 714
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 670,
-                "h": 714
-            },
-            "sourceSize": {
-                "w": 670,
-                "h": 714
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Kicking_000",
-            "frame": {
-                "x": 7325,
-                "y": 1780,
-                "w": 614,
-                "h": 574
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 614,
-                "h": 574
-            },
-            "sourceSize": {
-                "w": 614,
-                "h": 574
-            }
-        },
-        {
             "filename": "Zephyr_Shiba_Kicking_001",
             "frame": {
-                "x": 7325,
-                "y": 2355,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 302,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_002",
             "frame": {
-                "x": 7325,
-                "y": 2930,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 447,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_003",
             "frame": {
-                "x": 7325,
-                "y": 3505,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 592,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_004",
             "frame": {
-                "x": 7325,
-                "y": 4080,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 737,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_005",
             "frame": {
-                "x": 7325,
-                "y": 4655,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 882,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_006",
             "frame": {
-                "x": 7325,
-                "y": 5230,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 1027,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_007",
             "frame": {
-                "x": 7325,
-                "y": 5805,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 1172,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_008",
             "frame": {
-                "x": 7325,
-                "y": 6380,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 1317,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_009",
             "frame": {
-                "x": 7325,
-                "y": 6955,
-                "w": 614,
-                "h": 574
+                "x": 1656,
+                "y": 1462,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_010",
             "frame": {
                 "x": 0,
-                "y": 7728,
-                "w": 614,
-                "h": 574
+                "y": 1742,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Kicking_011",
             "frame": {
-                "x": 615,
-                "y": 7728,
-                "w": 614,
-                "h": 574
+                "x": 155,
+                "y": 1742,
+                "w": 154,
+                "h": 144
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             },
             "sourceSize": {
-                "w": 614,
-                "h": 574
+                "w": 154,
+                "h": 144
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_000",
             "frame": {
-                "x": 0,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 384,
+                "y": 925,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_001",
             "frame": {
-                "x": 667,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 552,
+                "y": 925,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_002",
             "frame": {
-                "x": 1334,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 720,
+                "y": 925,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_003",
             "frame": {
-                "x": 2001,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 888,
+                "y": 925,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_004",
             "frame": {
-                "x": 2668,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 0,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_005",
             "frame": {
-                "x": 3335,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 168,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_006",
             "frame": {
-                "x": 4002,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 336,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_007",
             "frame": {
-                "x": 4669,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 504,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_008",
             "frame": {
-                "x": 5336,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 672,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_009",
             "frame": {
-                "x": 6003,
-                "y": 7129,
-                "w": 666,
-                "h": 598
+                "x": 840,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_010",
             "frame": {
-                "x": 7325,
-                "y": 0,
-                "w": 666,
-                "h": 598
+                "x": 1008,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Run Slashing_011",
             "frame": {
-                "x": 7325,
-                "y": 599,
-                "w": 666,
-                "h": 598
+                "x": 1176,
+                "y": 1273,
+                "w": 167,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             },
             "sourceSize": {
-                "w": 666,
-                "h": 598
+                "w": 167,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_000",
             "frame": {
-                "x": 4035,
-                "y": 0,
-                "w": 649,
-                "h": 690
+                "x": 131,
+                "y": 1082,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_001",
             "frame": {
-                "x": 4035,
-                "y": 691,
-                "w": 649,
-                "h": 690
+                "x": 294,
+                "y": 1082,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_002",
             "frame": {
-                "x": 4035,
-                "y": 1382,
-                "w": 649,
-                "h": 690
+                "x": 457,
+                "y": 1082,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_003",
             "frame": {
-                "x": 4035,
-                "y": 2073,
-                "w": 649,
-                "h": 690
+                "x": 620,
+                "y": 1082,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_004",
             "frame": {
-                "x": 4035,
-                "y": 2764,
-                "w": 649,
-                "h": 690
+                "x": 783,
+                "y": 1082,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_005",
             "frame": {
-                "x": 4035,
-                "y": 3455,
-                "w": 649,
-                "h": 690
+                "x": 946,
+                "y": 1082,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_006",
             "frame": {
-                "x": 0,
-                "y": 4540,
-                "w": 649,
-                "h": 690
+                "x": 1187,
+                "y": 0,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_007",
             "frame": {
-                "x": 650,
-                "y": 4540,
-                "w": 649,
-                "h": 690
+                "x": 1187,
+                "y": 174,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_008",
             "frame": {
-                "x": 1300,
-                "y": 4540,
-                "w": 649,
-                "h": 690
+                "x": 1187,
+                "y": 348,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_009",
             "frame": {
-                "x": 1950,
-                "y": 4540,
-                "w": 649,
-                "h": 690
+                "x": 1187,
+                "y": 522,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_010",
             "frame": {
-                "x": 2600,
-                "y": 4540,
-                "w": 649,
-                "h": 690
+                "x": 1187,
+                "y": 696,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Running_011",
             "frame": {
-                "x": 3250,
-                "y": 4540,
-                "w": 649,
-                "h": 690
+                "x": 1187,
+                "y": 870,
+                "w": 162,
+                "h": 173
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 649,
-                "h": 690
+                "w": 162,
+                "h": 173
             },
             "sourceSize": {
-                "w": 649,
-                "h": 690
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_000",
-            "frame": {
-                "x": 5905,
-                "y": 3130,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_001",
-            "frame": {
-                "x": 5905,
-                "y": 3738,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_002",
-            "frame": {
-                "x": 5905,
-                "y": 4346,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_003",
-            "frame": {
-                "x": 5905,
-                "y": 4954,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_004",
-            "frame": {
-                "x": 5905,
-                "y": 5562,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_005",
-            "frame": {
-                "x": 0,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_006",
-            "frame": {
-                "x": 686,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_007",
-            "frame": {
-                "x": 1372,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_008",
-            "frame": {
-                "x": 2058,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_009",
-            "frame": {
-                "x": 2744,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_010",
-            "frame": {
-                "x": 3430,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
-            }
-        },
-        {
-            "filename": "Zephyr_Shiba_Slashing in The Air_011",
-            "frame": {
-                "x": 4116,
-                "y": 6521,
-                "w": 685,
-                "h": 607
-            },
-            "rotated": false,
-            "trimmed": false,
-            "spriteSourceSize": {
-                "x": 0,
-                "y": 0,
-                "w": 685,
-                "h": 607
-            },
-            "sourceSize": {
-                "w": 685,
-                "h": 607
+                "w": 162,
+                "h": 173
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_000",
             "frame": {
-                "x": 4802,
-                "y": 6521,
-                "w": 653,
-                "h": 601
+                "x": 0,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_001",
             "frame": {
-                "x": 5456,
-                "y": 6521,
-                "w": 653,
-                "h": 601
+                "x": 164,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_002",
             "frame": {
-                "x": 6671,
-                "y": 0,
-                "w": 653,
-                "h": 601
+                "x": 328,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_003",
             "frame": {
-                "x": 6671,
-                "y": 602,
-                "w": 653,
-                "h": 601
+                "x": 492,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_004",
             "frame": {
-                "x": 6671,
-                "y": 1204,
-                "w": 653,
-                "h": 601
+                "x": 656,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_005",
             "frame": {
-                "x": 6671,
-                "y": 1806,
-                "w": 653,
-                "h": 601
+                "x": 820,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_006",
             "frame": {
-                "x": 6671,
-                "y": 2408,
-                "w": 653,
-                "h": 601
+                "x": 984,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_007",
             "frame": {
-                "x": 6671,
-                "y": 3010,
-                "w": 653,
-                "h": 601
+                "x": 1148,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_008",
             "frame": {
-                "x": 6671,
-                "y": 3612,
-                "w": 653,
-                "h": 601
+                "x": 1312,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_009",
             "frame": {
-                "x": 6671,
-                "y": 4214,
-                "w": 653,
-                "h": 601
+                "x": 1476,
+                "y": 1591,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_010",
             "frame": {
-                "x": 6671,
-                "y": 4816,
-                "w": 653,
-                "h": 601
+                "x": 1656,
+                "y": 0,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Slashing_011",
             "frame": {
-                "x": 6671,
-                "y": 5418,
-                "w": 653,
-                "h": 601
+                "x": 1656,
+                "y": 151,
+                "w": 163,
+                "h": 150
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             },
             "sourceSize": {
-                "w": 653,
-                "h": 601
+                "w": 163,
+                "h": 150
             }
         },
         {
             "filename": "Zephyr_Shiba_Sliding_000",
             "frame": {
-                "x": 6670,
-                "y": 7129,
-                "w": 553,
-                "h": 581
+                "x": 1503,
+                "y": 1002,
+                "w": 138,
+                "h": 145
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             },
             "sourceSize": {
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             }
         },
         {
             "filename": "Zephyr_Shiba_Sliding_001",
             "frame": {
-                "x": 6110,
-                "y": 6521,
-                "w": 553,
-                "h": 581
+                "x": 1503,
+                "y": 1148,
+                "w": 138,
+                "h": 145
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             },
             "sourceSize": {
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             }
         },
         {
             "filename": "Zephyr_Shiba_Sliding_002",
             "frame": {
-                "x": 4685,
-                "y": 4648,
-                "w": 553,
-                "h": 581
+                "x": 1503,
+                "y": 1294,
+                "w": 138,
+                "h": 145
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             },
             "sourceSize": {
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             }
         },
         {
             "filename": "Zephyr_Shiba_Sliding_003",
             "frame": {
-                "x": 5295,
-                "y": 5312,
-                "w": 553,
-                "h": 581
+                "x": 1503,
+                "y": 1440,
+                "w": 138,
+                "h": 145
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             },
             "sourceSize": {
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             }
         },
         {
             "filename": "Zephyr_Shiba_Sliding_004",
             "frame": {
-                "x": 6671,
-                "y": 6020,
-                "w": 553,
-                "h": 581
+                "x": 1820,
+                "y": 1430,
+                "w": 138,
+                "h": 145
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             },
             "sourceSize": {
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             }
         },
         {
             "filename": "Zephyr_Shiba_Sliding_005",
             "frame": {
-                "x": 7325,
-                "y": 1198,
-                "w": 553,
-                "h": 581
+                "x": 1820,
+                "y": 1576,
+                "w": 138,
+                "h": 145
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             },
             "sourceSize": {
-                "w": 553,
-                "h": 581
+                "w": 138,
+                "h": 145
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_000",
             "frame": {
-                "x": 3900,
-                "y": 4540,
-                "w": 609,
-                "h": 663
+                "x": 1187,
+                "y": 1044,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_001",
             "frame": {
-                "x": 4685,
+                "x": 1350,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_002",
             "frame": {
-                "x": 4685,
-                "y": 664,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 167,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_003",
             "frame": {
-                "x": 4685,
-                "y": 1328,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 334,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_004",
             "frame": {
-                "x": 4685,
-                "y": 1992,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 501,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_005",
             "frame": {
-                "x": 4685,
-                "y": 2656,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 668,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_006",
             "frame": {
-                "x": 4685,
-                "y": 3320,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 835,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_007",
             "frame": {
-                "x": 4685,
-                "y": 3984,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 1002,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_008",
             "frame": {
-                "x": 0,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 1350,
+                "y": 1169,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_009",
             "frame": {
-                "x": 610,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 0,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_010",
             "frame": {
-                "x": 1220,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 153,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_011",
             "frame": {
-                "x": 1830,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 306,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_012",
             "frame": {
-                "x": 2440,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 459,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_013",
             "frame": {
-                "x": 3050,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 612,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_014",
             "frame": {
-                "x": 3660,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 765,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_015",
             "frame": {
-                "x": 4270,
-                "y": 5231,
-                "w": 609,
-                "h": 663
+                "x": 918,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_016",
             "frame": {
-                "x": 5295,
-                "y": 0,
-                "w": 609,
-                "h": 663
+                "x": 1071,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_017",
             "frame": {
-                "x": 5295,
-                "y": 664,
-                "w": 609,
-                "h": 663
+                "x": 1224,
+                "y": 1424,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_018",
             "frame": {
-                "x": 5295,
-                "y": 1328,
-                "w": 609,
-                "h": 663
+                "x": 1503,
+                "y": 0,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_019",
             "frame": {
-                "x": 5295,
-                "y": 1992,
-                "w": 609,
-                "h": 663
+                "x": 1503,
+                "y": 167,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_020",
             "frame": {
-                "x": 5295,
-                "y": 2656,
-                "w": 609,
-                "h": 663
+                "x": 1503,
+                "y": 334,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_021",
             "frame": {
-                "x": 5295,
-                "y": 3320,
-                "w": 609,
-                "h": 663
+                "x": 1503,
+                "y": 501,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_022",
             "frame": {
-                "x": 5295,
-                "y": 3984,
-                "w": 609,
-                "h": 663
+                "x": 1503,
+                "y": 668,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             }
         },
         {
             "filename": "Zephyr_Shiba_Walking_023",
             "frame": {
-                "x": 5295,
-                "y": 4648,
-                "w": 609,
-                "h": 663
+                "x": 1503,
+                "y": 835,
+                "w": 152,
+                "h": 166
             },
             "rotated": false,
             "trimmed": false,
             "spriteSourceSize": {
                 "x": 0,
                 "y": 0,
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
             },
             "sourceSize": {
-                "w": 609,
-                "h": 663
+                "w": 152,
+                "h": 166
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_000",
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_001",
+            "frame": {
+                "x": 0,
+                "y": 192,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_002",
+            "frame": {
+                "x": 216,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_003",
+            "frame": {
+                "x": 216,
+                "y": 192,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_004",
+            "frame": {
+                "x": 0,
+                "y": 384,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_005",
+            "frame": {
+                "x": 216,
+                "y": 384,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_006",
+            "frame": {
+                "x": 432,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_007",
+            "frame": {
+                "x": 432,
+                "y": 192,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_008",
+            "frame": {
+                "x": 432,
+                "y": 384,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_009",
+            "frame": {
+                "x": 0,
+                "y": 576,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_010",
+            "frame": {
+                "x": 216,
+                "y": 576,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_011",
+            "frame": {
+                "x": 432,
+                "y": 576,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_012",
+            "frame": {
+                "x": 648,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_013",
+            "frame": {
+                "x": 648,
+                "y": 192,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Dying_014",
+            "frame": {
+                "x": 648,
+                "y": 384,
+                "w": 215,
+                "h": 191
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 215,
+                "h": 191
+            },
+            "sourceSize": {
+                "w": 215,
+                "h": 191
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Falling Down_000",
+            "frame": {
+                "x": 1056,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "sourceSize": {
+                "w": 130,
+                "h": 190
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Falling Down_001",
+            "frame": {
+                "x": 1056,
+                "y": 191,
+                "w": 130,
+                "h": 190
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "sourceSize": {
+                "w": 130,
+                "h": 190
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Falling Down_002",
+            "frame": {
+                "x": 1056,
+                "y": 382,
+                "w": 130,
+                "h": 190
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "sourceSize": {
+                "w": 130,
+                "h": 190
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Falling Down_003",
+            "frame": {
+                "x": 1056,
+                "y": 573,
+                "w": 130,
+                "h": 190
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "sourceSize": {
+                "w": 130,
+                "h": 190
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Falling Down_004",
+            "frame": {
+                "x": 1056,
+                "y": 764,
+                "w": 130,
+                "h": 190
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "sourceSize": {
+                "w": 130,
+                "h": 190
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Falling Down_005",
+            "frame": {
+                "x": 0,
+                "y": 1082,
+                "w": 130,
+                "h": 190
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 190
+            },
+            "sourceSize": {
+                "w": 130,
+                "h": 190
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_000",
+            "frame": {
+                "x": 648,
+                "y": 576,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_001",
+            "frame": {
+                "x": 0,
+                "y": 768,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_002",
+            "frame": {
+                "x": 192,
+                "y": 768,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_003",
+            "frame": {
+                "x": 384,
+                "y": 768,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_004",
+            "frame": {
+                "x": 576,
+                "y": 768,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_005",
+            "frame": {
+                "x": 864,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_006",
+            "frame": {
+                "x": 864,
+                "y": 157,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_007",
+            "frame": {
+                "x": 864,
+                "y": 314,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_008",
+            "frame": {
+                "x": 864,
+                "y": 471,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_009",
+            "frame": {
+                "x": 864,
+                "y": 628,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_000",
+            "frame": {
+                "x": 465,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_001",
+            "frame": {
+                "x": 620,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_002",
+            "frame": {
+                "x": 775,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_010",
+            "frame": {
+                "x": 0,
+                "y": 925,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_004",
+            "frame": {
+                "x": 930,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Hurt_011",
+            "frame": {
+                "x": 192,
+                "y": 925,
+                "w": 191,
+                "h": 156
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 191,
+                "h": 156
+            },
+            "sourceSize": {
+                "w": 191,
+                "h": 156
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_003",
+            "frame": {
+                "x": 1085,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_005",
+            "frame": {
+                "x": 1240,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_006",
+            "frame": {
+                "x": 1395,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_007",
+            "frame": {
+                "x": 1550,
+                "y": 1742,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_008",
+            "frame": {
+                "x": 1820,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_009",
+            "frame": {
+                "x": 1820,
+                "y": 143,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_010",
+            "frame": {
+                "x": 1820,
+                "y": 286,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_011",
+            "frame": {
+                "x": 1820,
+                "y": 429,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_012",
+            "frame": {
+                "x": 1820,
+                "y": 572,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_013",
+            "frame": {
+                "x": 1820,
+                "y": 715,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_014",
+            "frame": {
+                "x": 1820,
+                "y": 858,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_015",
+            "frame": {
+                "x": 1820,
+                "y": 1001,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_016",
+            "frame": {
+                "x": 1820,
+                "y": 1144,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Idle Blinking_017",
+            "frame": {
+                "x": 1820,
+                "y": 1287,
+                "w": 154,
+                "h": 142
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 142
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 142
+            }
+        },
+        {
+            "filename": "Zephyr_Shiba_Kicking_000",
+            "frame": {
+                "x": 310,
+                "y": 1742,
+                "w": 154,
+                "h": 144
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 154,
+                "h": 144
+            },
+            "sourceSize": {
+                "w": 154,
+                "h": 144
             }
         }
     ],
     "meta": {
         "app": "https://www.leshylabs.com/apps/sstool/",
         "version": "Leshy SpriteSheet Tool v0.8.4",
-        "image": "zephyr",
+        "image": "zephyr.png",
         "size": {
-            "w": 8609,
-            "h": 8302
+            "w": 1974,
+            "h": 1886
         },
         "scale": 1
     }

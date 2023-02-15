@@ -120,10 +120,10 @@ const Layout = ({ auth, alert, logout }) => {
           </div>
           <audio ref={aud} autoplay={true} src={require('./game/assets/audio/IntroMusic.mpeg').default}></audio>
         </nav>
-        <div className="relative ">
-          <Outlet />
-          <img className="m-background" src={require("../assets/landing.png").default}></img>
-        </div>
+        {/* <div className="relative "> */}
+
+        <div className="m-background"><Outlet /></div>
+        {/* </div> */}
       </div>
       <ToastContainer
         position="top-right"

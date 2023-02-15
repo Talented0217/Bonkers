@@ -19,12 +19,14 @@ class Character {
         this.shadow = this.scene.add.ellipse(config.x + config.shadow_x, config.y + config.shadow_y, config.shadow_width, config.shadow_height, "#000000", 0.7).setOrigin(0, 0).setScale(config.scale, config.scale);
         this.body = this.scene.physics.add.sprite(config.x, config.y, config.type, 0).setScale(config.scale, config.scale).setOrigin(0, 0);
 
+
+
         this.body.setBodySize(config.body_width, config.body_height, false);
         this.body.body.setOffset(config.offsetX, config.offsetY);
 
         this.attacking = false;
 
-        // if (this.config.type == "Boss") this.body.setOrigin(1, 0);
+
         //event
 
         this.body.on("animationcomplete", ({ key }) => {
@@ -44,8 +46,11 @@ class Character {
                 this.body.destroy();
                 this.shadow.destroy();
             }
-            else
+            else {
                 this.setState(STATE_WAITING);
+                // this.body.setOrigin(0, 0);
+            }
+
         })
 
 
@@ -89,7 +94,6 @@ class Character {
             }
             else {
                 this.body.setFlipX(false);
-
             }
 
             if (directionH == LEFT) this.body.setVelocityX(-s);
@@ -103,6 +107,7 @@ class Character {
         this.body.play(this.config.type + "Idle")
         this.body.setVelocity(0);
         this.setState(STATE_IDLING);
+
 
     }
 
@@ -129,10 +134,10 @@ class Character {
         this.body.play(this.config.type + "Die")
         if (this.config.type == BOSS) {
             if (this.direction() == this.config.direction) {
-                this.body.setOrigin(0.3, 0.2);
+                this.body.setOrigin(0.3, 0.1);
             }
             else {
-                this.body.setOrigin(0, 0.2);
+                this.body.setOrigin(0, 0.1);
             }
         }
         if (this.config.type == BEAR) {
@@ -205,6 +210,8 @@ class Character {
         // this.setAttackFlag(14, 18);
         this.emitAttack(14);
         this.setState(STATE_ATTACKING);
+
+
 
 
     }

@@ -32,6 +32,7 @@ const addScore = async (userId, score) => {
 }
 
 const withDraw = async (walletAddress, amount) => {
+  console.log(walletAddress, amount);
   var connection = new web3.Connection(web3.clusterApiUrl("mainnet-beta"));
   // Construct a `Keypair` from secret key
   var fromWallet = web3.Keypair.fromSecretKey(
@@ -54,7 +55,7 @@ const withDraw = async (walletAddress, amount) => {
       toTokenAccount.address,
       fromWallet.publicKey,
       [],
-      amount
+      amount * 10 ** 5
     )
   );
 

@@ -49,9 +49,20 @@ const Withdraw = ({ auth, withDraw, loadUser }) => {
                     </table>
                     <div className="text-[20px] text-[#128921] text-center mt-10">With draw your Bonkers! (207,000)</div>
                     <div className="w-full flex justify-center">
-                        <button className="bg-blue-600 rounded-lg px-5 py-2 mt-5 text-gray-200" onClick={() => {
-                            if (auth.user.score > 0) {
-                                withDraw();
+                        <button className="bg-blue-600 rounded-lg px-5 py-2 mt-5 text-gray-200" onClick={async () => {
+                            let score = 0;
+                            users.forEach((user, index) => {
+                                if (user._id == auth.user._id)
+                                    score = user.score;
+                            })
+
+                            if (score > 0) {
+                                if (auth.user.earn == true)
+                                    toast.error("You already withdraw");
+                                else {
+                                    await withDraw();
+                                    toast.success("You withdraw successfully!");
+                                }
                             }
                             else {
                                 toast.error("You didn't complete the game");

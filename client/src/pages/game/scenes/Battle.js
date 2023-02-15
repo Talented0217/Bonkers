@@ -10,7 +10,7 @@ import api from "../../../utils/api";
 
 import Joystick from "../components/Joystick";
 
-
+import { isMobile } from "../../../utils/utils";
 //images
 import back1 from '../assets/background/game_background_1.png';
 import back2 from '../assets/background/game_background_2.png';
@@ -54,9 +54,23 @@ const manaJson = require('../assets/jsons/mana.json');
 const initialEnemey = [2, 6, 7, 8, 9];
 //
 
+var width = isMobile() ? 1280 : window.innerWidth;
+var height = isMobile() ? 600 : window.innerHeight;
 class Battle extends Scene {
     constructor(props = null) {
-        super(props);
+
+        super({
+            ...props,
+            // scale: {
+            //     mode: Phaser.Scale.FIT,
+            //     parent: "game",
+            //     autoCenter: Phaser.Scale.CENTER_BOTH,
+            //     width: 800,
+            //     height: 600,
+
+            // },
+
+        });
 
         // initial image config;       
 
@@ -119,27 +133,87 @@ class Battle extends Scene {
         // this.load.atlas(ZEPHYR, zephyr, zephyrJson);
         // this.load.atlas("Fire", fire, fireJson);
 
+        {
+
+            var progressBar = this.add.graphics();
+            var progressBox = this.add.graphics();
+            progressBox.fillStyle(0x222222, 0.8);
+            progressBox.fillRect(width / 2 - 160, height / 2, 320, 30);
+
+
+            var loadingText = this.make.text({
+                x: width / 2,
+                y: height / 2 - 50,
+                text: 'Loading...',
+                style: {
+                    font: '20px monospace',
+                    fill: '#ffffff'
+                }
+            });
+            loadingText.setOrigin(0.5, 0.5);
+
+            var percentText = this.make.text({
+                x: width / 2,
+                y: height / 2 - 5,
+                text: '0%',
+                style: {
+                    font: '18px monospace',
+                    fill: '#ffffff'
+                }
+            });
+            percentText.setOrigin(0.5, 0.5);
+
+            var assetText = this.make.text({
+                x: width / 2,
+                y: height / 2 + 50,
+                text: '',
+                style: {
+                    font: '18px monospace',
+                    fill: '#ffffff'
+                }
+            });
+            assetText.setOrigin(0.5, 0.5);
+        }
+        this.load.on('progress', function (value) {
+            percentText.setText(parseInt(value * 100) + '%');
+            progressBar.clear();
+            progressBar.fillStyle(0xffffff, 1);
+            progressBar.fillRect(width / 2 - 160, height / 2, 300 * value, 30);
+        });
+
+        this.load.on('fileprogress', function (file) {
+            assetText.setText('Loading asset: ' + file.key);
+        });
+        this.load.on('complete', function () {
+            progressBar.destroy();
+            progressBox.destroy();
+            loadingText.destroy();
+            percentText.destroy();
+            assetText.destroy();
+        });
+
+
     }
     async create() {
 
         //controller
 
         // sound
-        this.levelSound = this.sound.add("intro", { volume: 0.05 });
-        this.bossSound = this.sound.add("introBoss", { volume: 0.05 });
+        this.levelSound = this.sound.add("intro", { volume: 0.2 });
+        this.bossSound = this.sound.add("introBoss", { volume: 0.2 });
         this.slashSound = this.sound.add("audioSlash");
         this.bearAttackSound = this.sound.add("audioBearAttack");
         this.bearDieSound = this.sound.add("audioBearDie");
         this.endSound = this.sound.add('audioEnd');
         //==================================================
         {
-            let scaleW = window.innerWidth / 3840;
-            let scaleH = window.innerHeight / 2160;
-            this.backImages.push(this.add.image(0, 0, "background1").setOrigin(0, 0).setScale(scaleW, scaleH));
-            this.backImages.push(this.add.image(window.innerWidth, 0, "background2").setOrigin(0, 0).setScale(scaleW, scaleH));
-            this.backImages.push(this.add.image(window.innerWidth * 2, 0, "background3").setOrigin(0, 0).setScale(scaleW, scaleH));
-            this.backImages.push(this.add.image(window.innerWidth * 3, 0, "background4").setOrigin(0, 0).setScale(scaleW, scaleH));
-            this.backImages.push(this.add.image(window.innerWidth * 4, 0, "background5").setOrigin(0, 0).setScale(scaleW, scaleH));
+            let scaleW = width / 3840;
+            let scaleH = height / 2160;
+            this.backImages.push(this.add.image(width * 0.5, height * 0.5, "background1").setOrigin(0.5, 0.5).setScale(scaleW, scaleH));
+            this.backImages.push(this.add.image(width * 1.5, height * 0.5, "background2").setOrigin(0.5, 0.5).setScale(scaleW, scaleH));
+            this.backImages.push(this.add.image(width * 2.5, height * 0.5, "background3").setOrigin(0.5, 0.5).setScale(scaleW, scaleH));
+            this.backImages.push(this.add.image(width * 3.5, height * 0.5, "background4").setOrigin(0.5, 0.5).setScale(scaleW, scaleH));
+            this.backImages.push(this.add.image(width * 4.5, height * 0.5, "background5").setOrigin(0.5, 0.5).setScale(scaleW, scaleH));
 
 
 
@@ -162,24 +236,24 @@ class Battle extends Scene {
 
 
         this.arrows = this.input.keyboard.createCursorKeys();
-        this.controllers = this.input.keyboard.addKeys('A,S,F');
+        this.controllers = this.input.keyboard.addKeys('W,A,S,D,J,K,L');
 
         this.player = new Character(this, {
             type: this.type,
             direction: RIGHT,
-            x: window.innerWidth / 2 - 100,
-            y: window.innerHeight / 2,
+            x: width / 2 - 100,
+            y: height / 2,
             speed: 40,
             state: STATE_WAITING,
-            scale: 0.2,
-            body_width: 700,
-            body_height: 100,
-            offsetY: 500,
+            scale: 1,
+            body_width: 140,
+            body_height: 20,
+            offsetY: 130,
             offsetX: 0,
-            shadow_width: 500,
-            shadow_height: 100,
+            shadow_width: 100,
+            shadow_height: 20,
             shadow_x: 20,
-            shadow_y: 100,
+            shadow_y: 130,
             range: 100,
             hp: 10,
             currentHp: 10,
@@ -251,55 +325,55 @@ class Battle extends Scene {
 
 
 
-
-        this.stick = new Joystick({ scene: this, x: 200, y: window.innerHeight - 200, holder: zephyr, pin: "pin" });
-
-
-        this.stick.on("mousemove", (dx, dy) => {
-            this.padX = dx;
-            this.padY = dy;
-            //// console.log(this.padX, this.padY);
-        })
-        this.stick.on("dragStopped", () => {
-            this.padX = 0;
-            this.padY = 0;
-        })
+        if (isMobile() == true) {
+            this.stick = new Joystick({ scene: this, x: 200, y: height - 200, holder: zephyr, pin: "pin" });
 
 
-        this.SlideButton = this.add.circle(window.innerWidth - 150, window.innerHeight - 140, 30, 0xff0000).setInteractive().setDepth(9999);
-        this.SlideButton.on('pointerdown', () => {
-            this.SlideButton.setAlpha(0.5);
-            this.buttonSpec = "SLIDE";
-        })
-        this.SlideButton.on('pointerup', () => {
-            this.SlideButton.setAlpha(1);
-            this.buttonSpec = null;
-        })
-
-        this.SlashButton = this.add.circle(window.innerWidth - 200, window.innerHeight - 200, 30, 0x00ffff).setInteractive().setDepth(9999);
-        this.SlashButton.on('pointerdown', () => {
-            this.SlashButton.setAlpha(0.5);
-            this.buttonSpec = "SLASH";
-        })
-        this.SlashButton.on('pointerup', () => {
-            this.SlashButton.setAlpha(1);
-            this.buttonSpec = null;
-        })
-
-        this.KickButton = this.add.circle(window.innerWidth - 100, window.innerHeight - 200, 30, 0xffff00).setInteractive().setDepth(9999);
-        this.KickButton.on('pointerdown', () => {
-            this.KickButton.setAlpha(0.5);
-            this.buttonSpec = "KICK";
-        })
-        this.KickButton.on('pointerup', () => {
-            this.KickButton.setAlpha(1);
-            this.buttonSpec = null;
-        })
+            this.stick.on("mousemove", (dx, dy) => {
+                this.padX = dx;
+                this.padY = dy;
+                //// console.log(this.padX, this.padY);
+            })
+            this.stick.on("dragStopped", () => {
+                this.padX = 0;
+                this.padY = 0;
+            })
 
 
+            this.SlideButton = this.add.circle(width - 150, height - 140, 30, 0xff0000).setInteractive().setDepth(9999);
+            this.SlideButton.on('pointerdown', () => {
+                this.SlideButton.setAlpha(0.5);
+                this.buttonSpec = "SLIDE";
+            })
+            this.SlideButton.on('pointerup', () => {
+                this.SlideButton.setAlpha(1);
+                this.buttonSpec = null;
+            })
+
+            this.SlashButton = this.add.circle(width - 200, height - 200, 30, 0x00ffff).setInteractive().setDepth(9999);
+            this.SlashButton.on('pointerdown', () => {
+                this.SlashButton.setAlpha(0.5);
+                this.buttonSpec = "SLASH";
+            })
+            this.SlashButton.on('pointerup', () => {
+                this.SlashButton.setAlpha(1);
+                this.buttonSpec = null;
+            })
+
+            this.KickButton = this.add.circle(width - 100, height - 200, 30, 0xffff00).setInteractive().setDepth(9999);
+            this.KickButton.on('pointerdown', () => {
+                this.KickButton.setAlpha(0.5);
+                this.buttonSpec = "KICK";
+            })
+            this.KickButton.on('pointerup', () => {
+                this.KickButton.setAlpha(1);
+                this.buttonSpec = null;
+            })
+
+        }
 
         // this.SlideButton.on('pointerdown', () => { })
-        this.txt = this.add.text(window.innerWidth / 2, window.innerHeight / 2, `GAME OVER`, { fontFamily: 'bonkerFont', fontSize: 120, color: '#ff00ff' }).setOrigin(0.5, 0.5).setDepth(9999).setAlpha(0);
+        this.txt = this.add.text(width / 2, height / 2, `GAME OVER`, { fontFamily: 'bonkerFont', fontSize: 120, color: '#ff00ff' }).setOrigin(0.5, 0.5).setDepth(9999).setAlpha(0);
         await this.nextLevel(1);
 
     }
@@ -340,19 +414,19 @@ class Battle extends Scene {
 
 
         // WALKING
-        if (this.arrows.left.isDown) {
+        if (this.controllers.A.isDown) {
             h = LEFT;
             keyPressed = true;
         }
-        if (this.arrows.right.isDown) {
+        if (this.controllers.D.isDown) {
             h = RIGHT;
             keyPressed = true;
         }
-        if (this.arrows.up.isDown) {
+        if (this.controllers.W.isDown) {
             v = UP;
             keyPressed = true;
         }
-        if (this.arrows.down.isDown) {
+        if (this.controllers.S.isDown) {
             v = DOWN;
             keyPressed = true;
         }
@@ -398,12 +472,12 @@ class Battle extends Scene {
             keyPressed = true;
         }
         //SLASHING
-        if (this.controllers.A.isDown || this.buttonSpec == "SLASH") {
+        if (this.controllers.J.isDown || this.buttonSpec == "SLASH") {
             keyPressed = true;
             isSlashing = true;
         }
 
-        if (this.controllers.S.isDown || this.buttonSpec == "SLIDE") {
+        if (this.controllers.K.isDown || this.buttonSpec == "SLIDE") {
             keyPressed = true;
             // isSlashing = true;
         }
@@ -414,11 +488,11 @@ class Battle extends Scene {
         // }
 
         //Kick
-        if (this.controllers.F.isDown || this.buttonSpec == "KICK") {
+        if (this.controllers.L.isDown || this.buttonSpec == "KICK") {
             this.player.updateState(STATE_KICKING);
 
         }
-        else if ((this.controllers.S.isDown || this.buttonSpec == "SLIDE") && this.isSliding == false) {
+        else if ((this.controllers.K.isDown || this.buttonSpec == "SLIDE") && this.isSliding == false) {
             this.player.updateState(STATE_SLIDING);
             this.isSliding = true;
             setTimeout(() => {
@@ -429,7 +503,7 @@ class Battle extends Scene {
 
         if (h != null || v != null) {
 
-            if (isRunning) {
+            if (isRunning || true) {
 
                 if (isSlashing) {
                     this.player.updateState(STATE_SLASHING_RUNNING, {
@@ -508,7 +582,7 @@ class Battle extends Scene {
         // bear animation
         this.anims.create({
             key: 'bearIdle',
-            frames: this.anims.generateFrameNames('bear', { prefix: 'zombie bear_idle', start: 0, end: 24, zeroPad: 3 }),
+            frames: this.anims.generateFrameNames('bear', { prefix: 'zombie bear_Idle', start: 0, end: 24, zeroPad: 3 }),
             frameRate: 24,
             repeat: -1
         })
@@ -531,7 +605,7 @@ class Battle extends Scene {
         })
         this.anims.create({
             key: 'bearHurt',
-            frames: this.anims.generateFrameNames('bear', { prefix: 'Zombie Bear_hurt', start: 0, end: 24, zeroPad: 3 }),
+            frames: this.anims.generateFrameNames('bear', { prefix: 'Zombie Bear_Hurt', start: 0, end: 24, zeroPad: 3 }),
             frameRate: 24,
             //repeat: -1
         })
@@ -544,12 +618,12 @@ class Battle extends Scene {
             frameRate: 24,
             // repeat: -1
         })
-        this.anims.create({
-            key: type + 'Fall',
-            frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Falling Down_', start: 0, end: 5, zeroPad: 3 }),
-            frameRate: 24,
-            repeat: -1
-        })
+        // this.anims.create({
+        //     key: type + 'Fall',
+        //     frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Falling Down_', start: 0, end: 5, zeroPad: 3 }),
+        //     frameRate: 24,
+        //     repeat: -1
+        // })
         this.anims.create({
             key: type + 'Idle',
             frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Idle Blinking_', start: 0, end: 17, zeroPad: 3 }),
@@ -562,18 +636,18 @@ class Battle extends Scene {
             frameRate: 24,
 
         })
-        this.anims.create({
-            key: type + 'JumpLoop',
-            frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Jump Loop_', start: 0, end: 5, zeroPad: 3 }),
-            frameRate: 24,
-            repeat: -1
-        })
-        this.anims.create({
-            key: type + 'Jump',
-            frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Jump Start_', start: 0, end: 5, zeroPad: 3 }),
-            frameRate: 24,
-            repeat: -1
-        })
+        // this.anims.create({
+        //     key: type + 'JumpLoop',
+        //     frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Jump Loop_', start: 0, end: 5, zeroPad: 3 }),
+        //     frameRate: 24,
+        //     repeat: -1
+        // })
+        // this.anims.create({
+        //     key: type + 'Jump',
+        //     frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Jump Start_', start: 0, end: 5, zeroPad: 3 }),
+        //     frameRate: 24,
+        //     repeat: -1
+        // })
         this.anims.create({
             key: type + 'Kick',
             frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Kicking_', start: 0, end: 11, zeroPad: 3 }),
@@ -597,12 +671,12 @@ class Battle extends Scene {
             frameRate: 24,
             // repeat: -1
         })
-        this.anims.create({
-            key: type + 'SlashInAir',
-            frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Slashing in The Air_', start: 0, end: 11, zeroPad: 3 }),
-            frameRate: 24,
-            // repeat: -1
-        })
+        // this.anims.create({
+        //     key: type + 'SlashInAir',
+        //     frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Slashing in The Air_', start: 0, end: 11, zeroPad: 3 }),
+        //     frameRate: 24,
+        //     // repeat: -1
+        // })
         this.anims.create({
             key: type + 'Slide',
             frames: this.anims.generateFrameNames(type, { prefix: type + '_Shiba_Sliding_', start: 0, end: 5, zeroPad: 3 }),
@@ -723,10 +797,10 @@ class Battle extends Scene {
 
     createBear = (level) => {
         let x, y, range, speed;
-        x = Math.random() * window.innerWidth;
-        y = Math.random() * window.innerHeight;
-        speed = Math.random() * 10 + 60;
-        range = Math.random() * 10 + 100;
+        x = Math.random() * width;
+        y = Math.random() * height;
+        speed = Math.random() * 30 + 30;
+        range = Math.random() * 40 + 60;
 
 
         if (this.currentEnemies < MAX_ENEMY + (level == 1 ? 1 : 0))
@@ -742,18 +816,18 @@ class Battle extends Scene {
                 y: y,
                 speed: speed,
                 state: STATE_IDLING,
-                scale: 0.2,
-                body_width: 700,
-                body_height: 100,
-                shadow_width: 700,
-                shadow_height: 100,
-                offsetX: 270,
-                offsetY: 750,
-                shadow_x: 60,
-                shadow_y: 150,
-                range: range,
-                hp: level,
-                currentHp: level,
+                scale: 2,
+                body_width: 160,
+                body_height: 20,
+                shadow_width: 140,
+                shadow_height: 20,
+                offsetX: 50,
+                offsetY: 190,
+                shadow_x: 130,
+                shadow_y: 380,
+                range: 200,
+                hp: 6,
+                currentHp: 6,
             });
             this.levelSound.stop();
             this.bossSound.play();
@@ -766,18 +840,18 @@ class Battle extends Scene {
                 y: y,
                 speed: speed,
                 state: STATE_IDLING,
-                scale: 0.4,
-                body_width: 350,
-                body_height: 100,
-                shadow_width: 350,
-                shadow_height: 100,
-                offsetY: 350,
+                scale: 2,
+                body_width: 90,
+                body_height: 10,
+                shadow_width: 90,
+                shadow_height: 15,
+                offsetY: 95,
                 offsetX: 0,
                 shadow_x: 0,
-                shadow_y: 140,
+                shadow_y: 190,
                 range: range,
-                hp: level,
-                currentHp: level,
+                hp: ~~(level) / 2 + 1,
+                currentHp: ~~(level) / 2 + 1,
             });
         newE.body.on("attack", (data) => {
 
@@ -836,12 +910,12 @@ class Battle extends Scene {
             this.levelSound.play();
         }
 
-        // this.cameras.main.setPosition(window.innerWidth * level - 1, 0);
+        // this.cameras.main.setPosition(width * level - 1, 0);
         if (level >= 2) {
             this.backImages.forEach((back) => {
                 this.add.tween({
                     targets: back,
-                    x: back.x - window.innerWidth,
+                    x: back.x - width,
                     duration: 3000,
                     ease: 'Power2',
                     completeDelay: 3000

@@ -80,7 +80,7 @@ const Sign = ({ loadUser, logIn, signUp, auth, alerts }) => {
   return (
     <>
       <div className="w-full m-section flex items-center sm:justify-evenly">
-        <div className="container px-2 py-2 rounded-lg bg-gray-800 sm:px-10 sm:w-[600px]">
+        <div className="container px-5 py-5 rounded-lg bg-gray-800 sm:px-10 sm:w-[500px] w-[300px] m-auto ">
           <div className="flex justify-evenly items-center">
             <div className="m-idle hidden sm:block">
               <img

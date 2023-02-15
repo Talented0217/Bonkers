@@ -7,6 +7,7 @@ import Loading from './scenes/Loading';
 import Battle from "./scenes/Battle";
 
 import { Link } from "react-router-dom";
+import { isMobile } from "../../utils/utils";
 const boardConfig = require("./config.json");
 
 const Main = (props) => {
@@ -35,8 +36,10 @@ const Main = (props) => {
         mode: Phaser.Scale.FIT,
         parent: "game",
         autoCenter: Phaser.Scale.CENTER_BOTH,
-        width: window.innerWidth,
-        height: window.innerHeight,
+        // width: 1024,
+        // height: 768
+        width: isMobile() ? 1280 : window.innerWidth,
+        height: isMobile() ? 600 : window.innerHeight,
 
       },
     };
@@ -48,7 +51,9 @@ const Main = (props) => {
     // })
   }, [])
 
-  return <><div id="game"></div>
+  return <>
+
+    {/* <Link to="/withdraw" id="navTowith" /> */}
     <Link to="/withdraw" id="navTowith" />
   </>;
 };
